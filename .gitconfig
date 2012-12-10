@@ -1,0 +1,32 @@
+[user]
+name = Klaus Trainer
+email = klaus_trainer@posteo.de
+
+[alias]
+ci = commit
+st = status
+br = branch
+co = checkout
+df = diff
+lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+poop = stash pop
+cancel = reset-soft HEAD^
+
+[diff]
+color = auto
+
+[pager]
+color = true
+
+[status]
+color = auto
+
+[github]
+user = KlausTrainer
+token = secret
+
+[mergetool]
+keepBackup = false
+
+[merge]
+tool = gvimdiff
