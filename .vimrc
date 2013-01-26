@@ -36,6 +36,8 @@ autocmd Filetype c set shiftwidth=8 tabstop=8 noexpandtab nospell
 
 autocmd Filetype json,javascript,coffee set shiftwidth=2 tabstop=2 expandtab nospell
 
+autocmd Filetype diff set nospell
+
 autocmd Filetype cucumber set shiftwidth=2 tabstop=2 expandtab nospell
 autocmd Filetype haml set shiftwidth=2 tabstop=2 expandtab nospell
 autocmd Filetype ruby set shiftwidth=2 tabstop=2 expandtab nospell
