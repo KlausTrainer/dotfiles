@@ -60,4 +60,4 @@ autocmd Filetype erlang set shiftwidth=4 tabstop=4 expandtab nospell
 
 autocmd Filetype tex set shiftwidth=4 tabstop=4 expandtab nospell
 
-autocmd Filetype yaml set shiftwidth=2 tabstop=2 expandtab
+autocmd Filetype yaml set shiftwidth=2 tabstop=2 expandtab nospell
