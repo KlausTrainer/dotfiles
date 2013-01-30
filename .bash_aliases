@@ -18,5 +18,7 @@ alias grep="grep --color=auto"
 alias mk="make"
 alias mkt="make test"
 
+alias joxa="rlwrap joxa"
+
 alias android-connect="mtpfs -o allow_other /media/GalaxyNexus"
 alias android-disconnect="fusermount -u /media/GalaxyNexus"
