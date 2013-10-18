@@ -52,7 +52,7 @@ autocmd Filetype xhtml set shiftwidth=2 tabstop=2 expandtab nospell
 
 autocmd Filetype java set shiftwidth=4 tabstop=4 noexpandtab nospell
 
-autocmd Filetype joxa,lisp set shiftwidth=2 tabstop=2 expandtab nospell
+autocmd Filetype joxa,clojure,lisp set shiftwidth=2 tabstop=2 expandtab nospell
 
 autocmd Filetype sh set shiftwidth=4 tabstop=4 expandtab nospell
 
