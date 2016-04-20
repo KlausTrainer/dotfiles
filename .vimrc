@@ -34,25 +34,15 @@ autocmd Filetype xsd map  :%w !xmllint --noout -<CR>
 
 autocmd Filetype c set shiftwidth=8 tabstop=8 noexpandtab nospell
 
-autocmd Filetype json,javascript,coffee set shiftwidth=2 tabstop=2 expandtab nospell
+autocmd Filetype xhtml,html,json,javascript,css,sass,stylus,coffee,haml,ruby,eruby,cucumber,yaml set shiftwidth=2 tabstop=2 expandtab nospell
 
-autocmd Filetype config,diff set nospell
-
-autocmd Filetype cucumber set shiftwidth=2 tabstop=2 expandtab nospell
-autocmd Filetype haml set shiftwidth=2 tabstop=2 expandtab nospell
-autocmd Filetype ruby set shiftwidth=2 tabstop=2 expandtab nospell
-autocmd Filetype eruby set shiftwidth=2 tabstop=2 expandtab nospell
-autocmd Filetype sass set shiftwidth=2 tabstop=2 expandtab nospell
+autocmd Filetype config,diff,elixir set nospell
 
 autocmd Filetype python set shiftwidth=4 tabstop=4 expandtab nospell
 
-autocmd Filetype css set shiftwidth=2 tabstop=2 expandtab nospell
-autocmd Filetype html set shiftwidth=2 tabstop=2 expandtab nospell
-autocmd Filetype xhtml set shiftwidth=2 tabstop=2 expandtab nospell
-
 autocmd Filetype java set shiftwidth=4 tabstop=4 noexpandtab nospell
 
-autocmd Filetype joxa,clojure,lisp set shiftwidth=2 tabstop=2 expandtab nospell
+autocmd Filetype joxa,clojure,lisp,scheme set shiftwidth=2 tabstop=2 expandtab nospell
 
 autocmd Filetype sh set shiftwidth=4 tabstop=4 expandtab nospell
 
@@ -60,4 +50,4 @@ autocmd Filetype erlang set shiftwidth=4 tabstop=4 expandtab nospell
 
 autocmd Filetype tex set shiftwidth=4 tabstop=4 expandtab nospell
 
-autocmd Filetype yaml set shiftwidth=2 tabstop=2 expandtab nospell
+execute pathogen#infect()

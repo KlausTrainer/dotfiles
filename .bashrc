@@ -98,18 +98,16 @@ fi
 #    . /etc/bash_completion
 #fi
 
-#set vi mode
+# set vi mode
 set -o vi
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export PATH="$HOME/bin:$PATH"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 source ~/.git-completion.bash
 complete -o default -o nospace -F _git g
-
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# Jaro Mail Installer addition on Sun Nov 25 13:01:26 CET 2012
-export PATH=/home/klausi/Mail/jaro/bin:$PATH
-# Finished adapting your PATH for Jaro Mail environment
 
 export MANPATH=$MANPATH:/usr/local/lib/erlang/man
 
