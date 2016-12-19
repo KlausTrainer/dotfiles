@@ -1,0 +1,9 @@
+DEVICE_ID=$(xinput | grep Touchpad | perl -p -e 's/.+id=(\d+).+/\1/g')
+PROP_NUMBER=$(xinput list-props $DEVICE_ID | grep 'Synaptics Scrolling Distance' | perl -p -e 's/.+ \((\d+)\):.+/\1/g')
+
+xinput set-prop $DEVICE_ID $PROP_NUMBER -27, -27
+setxkbmap -option caps:none
+xscreensaver -no-splash &
+xplanet &
+battery-status-watcher &
+syndaemon -i 1.0 -R -d

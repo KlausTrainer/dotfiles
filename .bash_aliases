@@ -1,6 +1,6 @@
 alias g="git"
 alias gf="git-flow"
-alias püsh="git push"
+alias g="git"
 alias stash="git stash"
 alias poop="git stash pop"
 
@@ -10,15 +10,4 @@ alias lla="ls -la"
 
 alias be="bundle exec"
 
-alias speck="bundle exec rspec"
-alias gurke="bundle exec cucumber"
-
 alias grep="grep --color=auto"
-
-alias mk="make"
-alias mkt="make test"
-
-alias joxa="rlwrap joxa"
-
-alias android-connect="mtpfs -o allow_other /media/GalaxyNexus"
-alias android-disconnect="fusermount -u /media/GalaxyNexus"
