@@ -50,4 +50,6 @@ autocmd Filetype erlang set shiftwidth=4 tabstop=4 expandtab nospell
 
 autocmd Filetype tex set shiftwidth=4 tabstop=4 expandtab nospell
 
+autocmd Filetype dockerfile set nospell
+
 execute pathogen#infect()
