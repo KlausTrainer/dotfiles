@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gpg -d $HOME/.pw/passwords.gpg | grep "^$1:" | perl -p -e 's/.+ ([^ ]+)\n$/\1/g' | xclip -selection clipboard
